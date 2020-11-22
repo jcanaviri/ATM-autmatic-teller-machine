@@ -9,7 +9,7 @@ class Billete {
 }
 
 // Las funciones a utilizar
-function entregarDinero() {
+const entregarDinero = () => {
     var t = document.getElementById("dinero");
     var dinero = parseInt(t.value);
 
@@ -26,7 +26,7 @@ function entregarDinero() {
     validar(dinero);
 }
 
-function validar(dinero) {
+const validar = (dinero) => {
     if (dinero > 0) {
         resultado.innerHTML = `No hay suficietes fondos`;
     } else {
@@ -41,7 +41,7 @@ function validar(dinero) {
     }
 }
 
-function resetear() {
+const resetear = () => {
     let dinero = document.getElementById('dinero');
     dinero.value = '';
     resultado.innerHTML = '';
